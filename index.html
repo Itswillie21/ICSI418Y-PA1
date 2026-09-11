@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Mission Control is a simple task management application for organizing tasks by priority."
+    >
+
+    <title>Mission Control | Task Dashboard</title>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript loads after the HTML has been parsed -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <!-- Page heading and introduction -->
+        <header class="page-header">
+
+            <p class="eyebrow">
+                PERSONAL TASK DASHBOARD
+            </p>
+
+            <h1>Mission Control</h1>
+
+            <p class="subtitle">
+                Keep your priorities organized, and your tasks under control!
+            </p>
+
+        </header>
+
+
+        <!-- Form for creating new tasks -->
+        <section class="task-entry" aria-labelledby="task-entry-heading">
+
+            <h2 id="task-entry-heading">
+                Add a Task
+            </h2>
+
+            <form id="task-form">
+
+                <div class="form-group task-name-group">
+
+                    <label for="task-input">
+                        Task
+                    </label>
+
+                    <input
+                        type="text"
+                        id="task-input"
+                        name="task"
+                        placeholder="What needs to get done?"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="priority">
+                        Priority
+                    </label>
+
+                    <select
+                        id="priority"
+                        name="priority"
+                    >
+                        <option value="low">
+                            Low
+                        </option>
+
+                        <option value="medium" selected>
+                            Medium
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="add-button"
+                    >
+                        Add Task
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Area where JavaScript will display current tasks -->
+        <section class="task-section" aria-labelledby="task-list-heading">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        CURRENT QUEUE
+                    </p>
+
+                    <h2 id="task-list-heading">
+                        Active Tasks
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    Complete your objectives, or remove them when they are no longer needed.
+                </p>
+
+            </div>
+
+
+            <!-- Task elements will be created here with JavaScript -->
+            <div
+                id="task-list"
+                class="task-list"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+
+        <!-- Small page footer -->
+        <footer class="page-footer">
+
+            <p>
+                An assignment for ICSI 418Y - Software Engineering, created by William Taylor.
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
