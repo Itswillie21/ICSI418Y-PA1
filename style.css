@@ -1,6 +1,4 @@
-/* ========================================
-   General Page Styling
-   ======================================== */
+/* General page styling */
 
 * {
     box-sizing: border-box;
@@ -17,9 +15,7 @@ body {
 }
 
 
-/* ========================================
-   Main Application Container
-   ======================================== */
+/* Main app- container */
 
 .app-container {
     width: 100%;
@@ -38,9 +34,7 @@ body {
 }
 
 
-/* ========================================
-   Page Header
-   ======================================== */
+/* Page header */
 
 .page-header {
     margin-bottom: 35px;
@@ -78,7 +72,6 @@ h2 {
 
 .subtitle {
     max-width: 600px;
-
     margin: 0;
 
     color: #626262;
@@ -88,9 +81,7 @@ h2 {
 }
 
 
-/* ========================================
-   Task Entry Section
-   ======================================== */
+/* Task entry section */
 
 .task-entry {
     margin-bottom: 38px;
@@ -159,8 +150,7 @@ input::placeholder {
 }
 
 
-/* Gives keyboard users a clear indication
-   of which form control is selected. */
+/* Focus states */
 
 input:focus,
 select:focus,
@@ -170,9 +160,7 @@ button:focus {
 }
 
 
-/* ========================================
-   Add Task Button
-   ======================================== */
+/* Add Task button */
 
 .form-actions {
     display: flex;
@@ -214,9 +202,7 @@ button {
 }
 
 
-/* ========================================
-   Task List Section
-   ======================================== */
+/* Task list */
 
 .task-section {
     margin-top: 10px;
@@ -241,7 +227,6 @@ button {
 
 .section-description {
     max-width: 360px;
-
     margin: 0;
 
     color: #6a6a6a;
@@ -258,10 +243,7 @@ button {
 }
 
 
-/* ========================================
-   Individual Tasks
-   These elements will be created by JavaScript.
-   ======================================== */
+/* Individual tasks */
 
 .task-item {
     padding: 16px;
@@ -290,9 +272,7 @@ button {
 }
 
 
-/* ========================================
-   Priority Indicators
-   ======================================== */
+/* Priority indicators */
 
 .priority-badge {
     padding: 4px 9px;
@@ -322,13 +302,10 @@ button {
 }
 
 
-/* ========================================
-   Task Buttons
-   ======================================== */
+/* Task buttons */
 
 .task-actions {
     display: flex;
-
     gap: 8px;
 }
 
@@ -368,9 +345,7 @@ button {
 }
 
 
-/* ========================================
-   Completed Tasks
-   ======================================== */
+/* Completed tasks */
 
 .completed {
     opacity: 0.65;
@@ -385,9 +360,7 @@ button {
 }
 
 
-/* ========================================
-   Footer
-   ======================================== */
+/* Footer */
 
 .page-footer {
     margin-top: 40px;
@@ -407,9 +380,7 @@ button {
 }
 
 
-/* ========================================
-   Responsive Layout
-   ======================================== */
+/* Smaller screens */
 
 @media (max-width: 650px) {
 
